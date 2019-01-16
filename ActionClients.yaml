@@ -1,0 +1,58 @@
+# Supported properties: int, float, bool, string and enum
+
+# Enums values can either be defined here or left for lazy loading from some other source.
+# If the enum values are defined here, please also update the function ActionClientPanel::getEnumStrings()
+
+insert_object_in_cavity:
+  peg: string
+  hole: string
+  robot_platform:
+    - platform_right
+    - platform_left
+    - platform_middle
+
+insert_object:
+  peg: string
+  hole: string
+  robot_platform:
+    - platform_right
+    - platform_left
+    - platform_middle
+
+move_base:
+  arm_safe_position:
+    - barrier_tape
+  source_location: enum
+  destination_location: enum
+  destination_orientation:
+    - NORTH
+    - SOUTH
+    - EAST
+    - WEST
+  dont_be_safe: bool
+
+perceive_cavity:
+  location: enum
+
+perceive_location:
+  location: enum
+
+pick_object:
+  object: enum
+  location: enum
+
+place_object:
+  object: string
+  location: enum
+
+stage_object:
+  robot_platform:
+    - platform_right
+    - platform_left
+    - platform_middle
+
+unstage_object:
+  robot_platform:
+    - platform_right
+    - platform_left
+    - platform_middle

@@ -1,0 +1,9 @@
+<library path="libaction_client_plugin">
+  <class name="action_client_plugin::ActionClientPanel"
+         type="action_client_plugin::ActionClientPanel"
+         base_class_type="rviz::Panel">
+    <description>
+      A teleop panel for the action client plugin.
+    </description>
+  </class>
+</library>
