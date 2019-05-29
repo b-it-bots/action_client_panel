@@ -72,24 +72,8 @@ set(HEADER_FILES
    src/clients/InsertObjectInCavityClient.h
 )
 
- generate_messages(
- DEPENDENCIES actionlib_msgs std_msgs geometry_msgs  mir_yb_action_msgs 
-)
-
 catkin_package(
   CATKIN_DEPENDS actionlib_msgs mir_yb_action_msgs
-)
-
-add_executable(test_action_server src/test_action_server.cpp)
-
-target_link_libraries(
-  test_action_server
-  ${catkin_LIBRARIES}
-)
-
-add_dependencies(
-  test_action_server
-  ${action_client_plugin_EXPORTED_TARGETS}
 )
 
 add_library(${PROJECT_NAME} ${SRC_FILES} ${HEADER_FILES})
