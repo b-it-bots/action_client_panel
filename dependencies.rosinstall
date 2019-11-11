@@ -1,0 +1,4 @@
+# Add any ROS dependencies here. For example:
+#- git:
+#    local-name: grasp-synergy
+#    uri: https://github.com/felixduvallet/grasp-synergy.git
