@@ -11,7 +11,9 @@ Authors:
 1. Sushant Vijay Chavan
 2. Ahmed Faisal Abdelrahman
 
+The following GIF demonstrates the action client panel tool being used to send action commands to a KUKA youBot on RViz:
 ![Demo](docs/Demo.gif)
+
 ### Instructions
 #### Using the Action Client Panel:
 The panel can be used by following these steps:
