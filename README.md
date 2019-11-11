@@ -10,6 +10,10 @@ The Action Client panel eases the task of send goals to an action server. The pa
 Authors:
 1. Sushant Vijay Chavan
 2. Ahmed Faisal Abdelrahman
+
+The following GIF demonstrates the action client panel tool being used to send action commands to a KUKA youBot on RViz:
+![Demo](docs/Demo.gif)
+
 ### Instructions
 #### Using the Action Client Panel:
 The panel can be used by following these steps:
@@ -51,3 +55,7 @@ Enumerations are used in order to provide drop-down lists in the ActionClientPan
     - In order to declare such a lazily loaded enum parameter in the ```ActionClients.yaml``` file, declare its type as ```enum``` indicating that it will be loaded later. For example ```location: enum```
 
 The method ```getEnumStrings``` in the ```ActionClientPanel``` class handles the loading of enum values from the correct location. Do not forget to update this method whenever a new enum parameter is added or an existing enum parameter is changed in the ```ActionClients.yaml``` file.
+
+
+### Architecture
+![Architecture Diagram](docs/Architecture.png)
